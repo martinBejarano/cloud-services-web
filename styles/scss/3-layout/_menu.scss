@@ -1,0 +1,207 @@
+.menu-button {
+    height: 20px;
+    width: fit-content;
+    padding: 0px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .menu-button__icon {
+        position: relative;
+        width: 20px;
+        height: 2px;
+        background-color: $cyan;
+        transition: all 0.2s;
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            width: 20px;
+            height: 2px;
+            background-color: $cyan;
+            transition: all 0.3s;
+        }
+
+        &::after {
+            transform: translateY(-6px);
+        }
+
+        &::before {
+            transform: translateY(6px);
+        }
+    }
+
+    &.menu-open {
+        // background-color: $white;
+        z-index: 50;
+
+        .menu-button__icon {
+            &::after {
+                transform: rotate(45deg);
+                background-color: $white;
+            }
+
+            &::before {
+                transform: rotate(-45deg);
+                background-color: $white;
+            }
+        }
+    }
+}
+
+.menu {
+    $r: ".menu";
+    width: 72%;
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3vw;
+
+        font-size: font("d-regular");
+
+        #{$r}__link {
+            @include animate();
+            opacity: 0;
+            transform: translateX(-100px);
+
+            &:nth-child(2) {
+                transition-delay: 0.2s;
+            }
+            &:nth-child(3) {
+                transition-delay: 0.4s;
+            }
+        }
+    }
+
+    &__brand {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $mobile-bp) {
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .menu-button {
+        height: 20px;
+        width: fit-content;
+        padding: 0px 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .menu-button__icon {
+            position: relative;
+            width: 20px;
+            height: 2px;
+            background-color: $cyan;
+            transition: all 0.2s;
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                width: 20px;
+                height: 2px;
+                background-color: $cyan;
+                transition: all 0.3s;
+            }
+
+            &::after {
+                transform: translateY(-6px);
+            }
+
+            &::before {
+                transform: translateY(6px);
+            }
+        }
+
+        &.menu-open {
+            .menu-button__icon {
+                background-color: transparent;
+                &::after {
+                    transform: rotate(45deg);
+                }
+
+                &::before {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    .menu {
+        $r: ".menu";
+        display: none;
+
+        width: 100%;
+        height: 100vh;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        z-index: 20;
+
+        background: rgb(0, 92, 213);
+        background: linear-gradient(51deg, rgba(0, 92, 213, 1) 0%, rgba(0, 172, 227, 1) 100%);
+
+        &.menu-open {
+            display: flex;
+        }
+
+        &__links {
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            flex-direction: column;
+            color: $white;
+            gap: 60px;
+            margin-top: auto;
+
+            // font-size: font("d-regular");
+
+            #{$r}__link {
+                // @include animate();
+                // opacity: 0;
+                // transform: translateX(-100px);
+
+                &:nth-child(2) {
+                    // transition-delay: 0.2s;
+                }
+                &:nth-child(3) {
+                    // transition-delay: 0.4s;
+                }
+            }
+        }
+
+        &__brand {
+            display: block;
+            color: $white;
+            font-size: font("m-giant");
+            margin-top: auto;
+            margin-bottom: 50px;
+        }
+    }
+}

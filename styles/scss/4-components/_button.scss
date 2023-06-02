@@ -1,0 +1,13 @@
+.button {
+    background-color: $cyan;
+    color: $white;
+    border-radius: 5px;
+    padding: 22px 30px;
+    font-family: "Poppins";
+}
+
+@media screen and (max-width: $mobile-bp) {
+    .button {
+        padding: 12px 20px;
+    }
+}

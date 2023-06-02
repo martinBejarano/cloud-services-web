@@ -1,0 +1,214 @@
+// Poppins
+@font-face {
+	font-family: "Poppins";
+	font-weight: 200;
+	src: url("../../fonts/Poppins/Poppins-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 300;
+	src: url("../../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 400;
+	src: url("../../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 500;
+	src: url("../../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 600;
+	src: url("../../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 700;
+	src: url("../../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 800;
+	src: url("../../fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Poppins";
+	font-weight: 900;
+	src: url("../../fonts/Poppins/Poppins-Black.ttf") format("truetype");
+}
+
+// Roboto
+@font-face {
+	font-family: "Roboto";
+	font-weight: 200;
+	src: url("../../fonts/Roboto/Roboto-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 300;
+	src: url("../../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 400;
+	src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 500;
+	src: url("../../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 600;
+	src: url("../../fonts/Roboto/Roboto-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 700;
+	src: url("../../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 800;
+	src: url("../../fonts/Roboto/Roboto-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-weight: 900;
+	src: url("../../fonts/Roboto/Roboto-Black.ttf") format("truetype");
+}
+
+$font-sizes: (
+	"d-giant": 42pt,
+	"d-large": 32pt,
+	"d-medium": 22pt,
+	"d-regular": 18pt,
+	"d-small": 16pt,
+
+	"l-giant": 36pt,
+	"l-large": 24pt,
+	"l-medium": 18pt,
+	"l-regular": 16pt,
+	"l-small": 12pt,
+
+	"m-giant": 28pt,
+	"m-large": 18pt,
+	"m-medium": 16pt,
+	"m-regular": 14pt,
+	"m-small": 12pt,
+);
+
+@function font($size) {
+	@return map.get($font-sizes, $size);
+}
+
+body {
+	font-family: "Poppins";
+	font-weight: 400;
+	font-size: font("d-small");
+	color: $grey;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Roboto";
+	font-weight: 700;
+	color: $darker-grey;
+}
+
+h1 {
+	font-size: font("d-giant");
+}
+
+h2 {
+	font-size: font("d-large");
+}
+
+h3 {
+	font-size: font("d-medium");
+}
+
+h4 {
+	font-size: font("d-regular");
+}
+
+h5 {
+	font-size: font("d-small");
+	color: $light-blue;
+}
+
+strong {
+	font-weight: 600;
+}
+
+@media screen and (max-width: $laptop-bp) {
+	body {
+		font-size: font("l-small");
+	}
+
+	h1 {
+		font-size: font("l-giant");
+	}
+
+	h2 {
+		font-size: font("l-large");
+	}
+
+	h3 {
+		font-size: font("l-medium");
+	}
+
+	h4 {
+		font-size: font("l-regular");
+	}
+
+	h5 {
+		font-size: font("l-small");
+	}
+}
+
+@media screen and (max-width: $mobile-bp) {
+	body {
+		font-size: font("m-small");
+	}
+
+	h1 {
+		font-size: font("m-giant");
+	}
+
+	h2 {
+		font-size: font("m-large");
+	}
+
+	h3 {
+		font-size: font("m-medium");
+	}
+
+	h4 {
+		font-size: font("m-regular");
+	}
+
+	h5 {
+		font-size: font("m-small");
+	}
+}

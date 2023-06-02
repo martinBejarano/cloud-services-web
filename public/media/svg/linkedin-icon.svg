@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.05 46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-2961.3" y1="2706.85" x2="-2961.3" y2="2705.85" gradientTransform="translate(15773.71 14418.43) scale(5.32 -5.32)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00ace3"/>
+      <stop offset="1" stop-color="#005cd5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-2877.05" y1="2164.02" x2="-2877.05" y2="2163.02" gradientTransform="translate(13222.22 31981.06) scale(4.59 -14.77)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00ace3"/>
+      <stop offset="1" stop-color="#005cd5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-3293.69" y1="2156.54" x2="-3293.69" y2="2155.54" gradientTransform="translate(47171.84 32668.87) scale(14.31 -15.14)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00ace3"/>
+      <stop offset="1" stop-color="#005cd5"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <rect class="cls-3" x="-1657.8" y="-844.75" width="800" height="4109"/>
+    </clipPath>
+  </defs>
+  <g id="l">
+    <rect id="Rectangle_143" data-name="Rectangle 143" class="cls-2" width="45.05" height="46" rx="4" ry="4"/>
+    <g id="_009-linkedin-logo" data-name=" 009-linkedin-logo">
+      <g id="Group_40" data-name="Group 40">
+        <path id="Path_14" data-name="Path 14" class="cls-5" d="m13.69,12.56c-1.47,0-2.66,1.19-2.66,2.66,0,1.47,1.19,2.66,2.66,2.66,1.47,0,2.66-1.19,2.66-2.66h0c0-1.47-1.19-2.66-2.66-2.66Z"/>
+        <rect id="Rectangle_44" data-name="Rectangle 44" class="cls-1" x="11.4" y="18.44" width="4.59" height="14.77"/>
+        <path id="Path_15" data-name="Path 15" class="cls-4" d="m27.68,18.07c-1.78-.07-3.45.85-4.34,2.39h-.06v-2.02h-4.4v14.77h4.59v-7.31c0-1.93.37-3.79,2.76-3.79s2.38,2.2,2.38,3.92v7.18h4.59v-8.1c0-3.98-.86-7.04-5.51-7.04Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

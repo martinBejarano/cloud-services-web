@@ -1,0 +1,51 @@
+.contact {
+    $r: ".contact";
+    padding: 75px 8vw;
+    background-color: $light-grey;
+
+    &__inner-container {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        opacity: 0;
+        @include animate();
+        #{$r}__title {
+        }
+        #{$r}__description {
+        }
+
+        #{$r}__button {
+            position: absolute;
+            right: 0px;
+            transition-delay: 1s;
+        }
+    }
+
+    &.shown {
+        #{$r}__inner-container {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-bp) {
+    .contact {
+        $r: ".contact";
+        &__inner-container {
+            margin: 0 auto;
+            width: fit-content;
+            #{$r}__title {
+            }
+            #{$r}__description {
+            }
+
+            #{$r}__button {
+                position: relative;
+                max-width: 200px;
+            }
+        }
+    }
+}

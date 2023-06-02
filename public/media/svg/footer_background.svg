@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800.27 305.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-2896.23" y1="1276.91" x2="-2897.25" y2="1276.05" gradientTransform="translate(2318795.11 390342.42) scale(800.36 -305.67)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#005cd5"/>
+      <stop offset="1" stop-color="#00ace3"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <path class="cls-3" d="m0,7.88S92.45-24.79,230.17,42.9c137.72,67.69,291.22,56.76,368.85,33.87,89.08-25.33,168.93,9.5,201.33,45.77-.22,62.79-.3,183.12-.3,183.12H0V7.88Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="-2894.81" y1="1286.37" x2="-2893.68" y2="1285.12" gradientTransform="translate(1372149.59 225768) scale(473.9 -175.4)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#005cd5"/>
+      <stop offset="1" stop-color="#00abe3"/>
+      <stop offset="1" stop-color="#00ace3"/>
+    </linearGradient>
+    <clipPath id="clippath-1">
+      <rect class="cls-3" x="-1067.71" y="-1438.32" width="800" height="4109"/>
+    </clipPath>
+  </defs>
+  <path id="Path_2017" data-name="Path 2017" class="cls-4" d="m0,7.88S92.45-24.79,230.17,42.9c137.72,67.69,291.22,56.76,368.85,33.87,89.08-25.33,168.93,9.5,201.33,45.77-.22,62.79-.3,183.12-.3,183.12H0V7.88Z"/>
+  <g class="cls-2">
+    <g id="Mask_Group_3" data-name="Mask Group 3">
+      <path id="Path_2693" data-name="Path 2693" class="cls-1" d="m352.09,310.17s-45.69-84.14,34.66-84.94c80.35-.8,122.1,27.24,200.09-11.22,77.99-38.46,122.89-57.69,150.46-32.85,27.57,24.84,61.45,27.25,69.32,20.83,7.88-6.41,6.3,143.43,6.3,143.43l-460.84-35.26Z"/>
+    </g>
+  </g>
+</svg>

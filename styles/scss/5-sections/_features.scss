@@ -1,0 +1,128 @@
+.features {
+    $r: ".features";
+    text-align: center;
+    padding: 75px 8vw;
+    background-color: $light-grey;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        margin-bottom: 75px;
+    }
+
+    &__title,
+    &__subtitle {
+        @include animate();
+        transform: translateY(-100%);
+        opacity: 0;
+        // &.shown {
+        //     opacity: 1;
+        // }
+    }
+
+    &__inner-container {
+        width: 100%;
+        max-width: $max-width;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+
+        #{$r}__feature {
+            width: 100%;
+            max-width: 300px;
+            min-width: $min-width;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 30px;
+
+            @include animate();
+            opacity: 0;
+            transform: translateY(15%);
+
+            &:nth-child(2) {
+                transition-delay: 0.2s;
+            }
+            &:nth-child(3) {
+                transition-delay: 0.4s;
+            }
+
+            #{$r}__feature-icon {
+                width: 100px;
+            }
+            #{$r}__feature-title {
+            }
+            #{$r}__feature-description {
+            }
+            #{$r}__feature-link {
+            }
+
+            &.shown {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+
+    &.shown {
+        #{$r}__title,
+        #{$r}__subtitle {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-bp) {
+    .features {
+        $r: ".features";
+
+        &__title {
+            // margin-bottom: 20px;
+        }
+
+        &__subtitle {
+            // margin-bottom: 75px;
+        }
+
+        &__inner-container {
+            gap: 50px;
+            flex-direction: column;
+
+            #{$r}__feature {
+                gap: 20px;
+
+                &:nth-child(2) {
+                }
+                &:nth-child(3) {
+                }
+
+                #{$r}__feature-icon {
+                    width: 80px;
+                }
+                #{$r}__feature-title {
+                }
+                #{$r}__feature-description {
+                }
+                #{$r}__feature-link {
+                }
+
+                &.shown {
+                }
+            }
+        }
+
+        &.shown {
+            #{$r}__title,
+            #{$r}__subtitle {
+            }
+        }
+    }
+}

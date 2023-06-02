@@ -1,0 +1,134 @@
+.benefits {
+    $r: ".benefits";
+    width: 100%;
+    min-height: 700px;
+    padding: 0px 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 300px;
+    margin-bottom: 125px;
+
+    &__inner-container {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 50px;
+
+        img {
+            min-width: 300px;
+            max-width: 500px;
+            width: 36vw;
+            opacity: 0;
+            @include animate();
+
+            &:nth-child(1) {
+                transform: translateX(-100%);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(100%);
+            }
+        }
+
+        #{$r}__benefit {
+            width: 45%;
+            min-width: $min-width;
+            max-width: 650px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            @include animate();
+            opacity: 0;
+
+            &:nth-child(1) {
+                transform: translateX(-100%);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(100%);
+            }
+
+            #{$r}__title {
+            }
+
+            #{$r}__description {
+            }
+
+            #{$r}__button {
+                width: 200px;
+            }
+
+            // #{$r} &.shown {
+            //     opacity: 1;
+            //     transform: translateX(0px);
+            // }
+        }
+
+        &.shown {
+            img {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+
+            #{$r}__benefit {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-bp) {
+    .benefits {
+        $r: ".benefits";
+        gap: 50px;
+
+        &__inner-container {
+            flex-direction: column-reverse;
+            gap: 50px;
+
+            img {
+                &:nth-child(1) {
+                    display: none;
+                }
+            }
+
+            #{$r}__benefit {
+                width: 60%;
+                gap: 20px;
+
+                &:nth-child(1) {
+                }
+
+                &:nth-child(2) {
+                }
+
+                #{$r}__title {
+                }
+
+                #{$r}__description {
+                }
+
+                #{$r}__button {
+                    width: 150px;
+                }
+            }
+
+            &.shown {
+                img {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+
+                #{$r}__benefit {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+        }
+    }
+}

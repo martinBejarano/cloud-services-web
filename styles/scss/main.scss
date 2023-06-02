@@ -1,0 +1,34 @@
+// Helpers
+@use "sass:map";
+@import "./1-helpers/variables";
+@import "./1-helpers/mixins";
+@import "./1-helpers/functions";
+
+// Tools
+@import "./0-tools/reset";
+
+// Basic
+@import "./2-basic/fonts";
+@import "./2-basic/body";
+
+// Layout
+@import "./3-layout/loader";
+@import "./3-layout/menu";
+@import "./3-layout/scrollbar";
+@import "./3-layout/footer";
+
+// Components
+@import "./4-components/button";
+
+// Sections
+@import "./5-sections/hero";
+@import "./5-sections/benefits";
+@import "./5-sections/features";
+@import "./5-sections/bonus";
+@import "./5-sections/contact";
+@import "./5-sections/opinions";
+
+// Glider
+// @import "./0-tools/glide.scss";
+@import "./0-tools/glide.core.scss";
+@import "./0-tools/glide.theme.scss";

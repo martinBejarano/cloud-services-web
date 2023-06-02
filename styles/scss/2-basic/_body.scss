@@ -1,0 +1,12 @@
+body {
+    overflow-x: hidden;
+
+    // & > * {
+    //     margin: 0 auto;
+    //     max-width: $max-section-width;
+    // }
+
+    &.loading {
+        overflow: hidden;
+    }
+}
